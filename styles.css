@@ -1,0 +1,22 @@
+/* Estilos personalizados */
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+footer {
+  font-size: 0.9rem;
+}
