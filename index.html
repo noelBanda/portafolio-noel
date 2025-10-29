@@ -5,153 +5,283 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio de Noel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#inicio">Mi Portafolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-        </ul>
-      </div>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-uppercase" href="#inicio">
+      <i class="bi bi-code-slash me-2"></i>Inicio
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active position-relative" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="#HardSkills">Habilidades Tecnicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="#cv">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="#blog">Blog</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Sección Inicio -->
-  <header id="inicio" class="vh-100 d-flex align-items-center justify-content-center text-center bg-primary text-white">
-    <div>
-      <h1 class="display-4">¡Hola! Soy Noel</h1>
-      <p class="lead">Scrum Master y Desarrollador Backend</p>
-      <button class="btn btn-light mt-3" onclick="scrollToSection('portafolio')">Ver Portafolio</button>
-    </div>
-  </header>
+<header id="inicio" class="vh-100 d-flex align-items-center bg-primary text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Columna de texto -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="display-4 fw-bold">¡Hola! Soy Noel</h1>
+        <p class="lead">
+          Desarrollador Full Stack especializado en backend. Me apasiona construir soluciones eficientes, escalables y bien documentadas. Domino tecnologías modernas y lidero equipos con enfoque ágil.
+        </p>
+      </div>
 
-  <!-- Sección Portafolio -->
-  <section id="portafolio" class="container py-5">
-    <h2 class="text-center mb-4">Portafolio</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <!--
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 1" />
-          -->
-            <div class="card proyecto-card shadow-lg border-0">
-                <div class="card-body">
-                    <h5 class="card-title text-center text-primary fw-bold mb-3">🧩 Sitio-Blog</h5>
-                    <ul class="list-unstyled">
-                    <li><strong>Rol:</strong> Scrum Master & Desarrollador Frontend</li>
-                    <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript</li>
-                    </ul>
-                    <p class="card-text mt-3">
-                    <strong>Descripción:</strong><br />
-                    Proyecto colaborativo enfocado en el desarrollo de un sitio web tipo blog, diseñado para compartir publicaciones y artículos de manera estructurada y visualmente atractiva.
-                    </p>
-                    <p class="card-text">
-                    <strong>Contribuciones principales:</strong>
-                    <ul>
-                        <li>✅ Organización del flujo de trabajo como Scrum Master: planificación de sprints, asignación de tareas y seguimiento.</li>
-                        <li>🎨 Implementación de la interfaz con HTML, CSS y JavaScript, asegurando navegación fluida y diseño coherente.</li>
-                        <li>🤝 Coordinación de la comunicación del equipo para cumplir plazos y calidad.</li>
-                    </ul>
-                    </p>
-                    <p class="card-text">
-                    <strong>Resultados y aprendizajes:</strong><br />
-                    Este proyecto fortaleció mis habilidades en gestión ágil, colaboración multidisciplinaria y desarrollo frontend estructurado, equilibrando liderazgo y programación técnica.
-                    </p>
-                </div>
-            </div>  
-        </div>
+      <!-- Columna de imagen -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="/Documents/Graduacion.jpg" alt="Foto de Noel" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <!--
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 1" />
-          -->
-            
-            <div class="card proyecto-card shadow-lg border-0">
-                <div class="card-body">
-                    <h5 class="card-title text-center text-primary fw-bold mb-3">✍️ Blog de Poesía Personal</h5>
-                    <ul class="list-unstyled">
-                    <li><strong>Rol:</strong> Desarrollador Full-Stack (individual)</li>
-                    <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript</li>
-                    </ul>
-                    <p class="card-text mt-3">
-                    <strong>Descripción:</strong><br />
-                    Sitio web tipo blog diseñado para compartir contenido poético y reflexivo, con un enfoque en la presentación limpia y la experiencia del lector. Este proyecto combina un diseño visual atractivo con una estructura funcional que facilita la publicación y lectura de textos.
-                    </p>
-                    <p class="card-text">
-                    <strong>Contribuciones principales:</strong>
-                    <ul>
-                        <li>🛠️ Desarrollo completo individual: diseño, maquetación e implementación funcional.</li>
-                        <li>📋 Gestión integral del proyecto: planificación, organización y entrega final.</li>
-                        <li>⚡ Integración de componentes interactivos con JavaScript para navegación dinámica y experiencia fluida.</li>
-                    </ul>
-                    </p>
-                    <p class="card-text">
-                    <strong>Resultados y aprendizajes:</strong><br />
-                    Este proyecto reforzó mi capacidad para trabajar de forma autónoma, gestionar el tiempo y los entregables, y mantener un enfoque estético y funcional al desarrollar proyectos personales.
-                    </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <!--
-          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Proyecto 1" />
-          -->     
-            <div class="card proyecto-card shadow-lg border-0">
-                <div class="card-body">
-                    <h5 class="card-title text-center text-primary fw-bold mb-3">🛍️ Amanlli – Plataforma de Comercio para Artesanos Locales</h5>
-                    <ul class="list-unstyled">
-                    <li><strong>Rol:</strong> Product Owner, Scrum Master & Desarrollador Full-Stack</li>
-                    <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Java, Spring Boot, Base de datos relacional</li>
-                    </ul>
-                    <p class="card-text mt-3">
-                    <strong>Descripción:</strong><br />
-                    Amanlli es una plataforma de comercio electrónico orientada a conectar a artesanos locales con consumidores interesados en productos auténticos y hechos a mano. Su objetivo es impulsar la economía local mediante un espacio digital seguro, accesible y funcional para la venta de artesanías.
-                    </p>
-                    <p class="card-text">
-                    <strong>Contribuciones principales:</strong>
-                    <ul>
-                        <li>📦 Liderazgo como Product Owner y Scrum Master: planificación del producto, definición de requisitos y gestión del backlog.</li>
-                        <li>💻 Desarrollo full-stack: interfaz de usuario y lógica del servidor con Spring Boot y conexión a base de datos.</li>
-                        <li>🧠 Diseño y supervisión de la arquitectura del sistema: módulos de usuario, catálogo y gestión de productos.</li>
-                        <li>🔁 Coordinación ágil del desarrollo: integración continua y entregas iterativas.</li>
-                    </ul>
-                    </p>
-                    <p class="card-text">
-                    <strong>Resultados y aprendizajes:</strong><br />
-                    Este proyecto ha fortalecido mis competencias en gestión de producto, liderazgo técnico y desarrollo full-stack, además de consolidar mi experiencia con Spring Boot y bases de datos en el contexto de una aplicación real orientada al mercado.
-                    </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Sección Acerca de mí -->
-  <section id="acerca" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Acerca de mí</h2>
-      <p class="text-center">Soy ingeniero en comunicaciones y electrónica, apasionado por el diseño visual, la documentación clara y la colaboración técnica.</p>
     </div>
-  </section>
+  </div>
+</header>
+
+  <!-- Sección Proyectos -->
+<section id="proyectos" class="container py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+  <h2 class="fw-bold display-5 text-primary position-relative d-inline-block">
+    <span class="border-bottom border-3 border-primary pb-1">Proyectos</span>
+  </h2>
+  </div>
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 d-flex">
+      <div class="card shadow-sm w-100 d-flex flex-column">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title text-center text-primary fw-bold mb-3">🧩 Sitio-Blog</h5>
+            <ul class="list-unstyled mb-3">
+              <li><strong>Rol:</strong> Scrum Master & Desarrollador Frontend</li>
+              <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+            <div class="card-text-scroll">
+              <p><strong>Descripción:</strong><br />
+                Proyecto colaborativo enfocado en el desarrollo de un sitio web tipo blog, diseñado para compartir publicaciones y artículos de manera estructurada y visualmente atractiva.
+              </p>
+              <p><strong>Contribuciones principales:</strong></p>
+              <ul>
+                <li>✅ Organización del flujo de trabajo como Scrum Master.</li>
+                <li>🎨 Implementación de la interfaz con HTML, CSS y JavaScript.</li>
+                <li>🤝 Coordinación de la comunicación del equipo.</li>
+              </ul>
+              <p><strong>Resultados y aprendizajes:</strong><br />
+                Fortalecí habilidades en gestión ágil, colaboración multidisciplinaria y desarrollo frontend estructurado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 d-flex">
+      <div class="card shadow-sm w-100 d-flex flex-column">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title text-center text-primary fw-bold mb-3">✍️ Blog de Poesía Personal</h5>
+            <ul class="list-unstyled mb-3">
+              <li><strong>Rol:</strong> Desarrollador Full-Stack (individual)</li>
+              <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+            <div class="card-text-scroll">
+              <p><strong>Descripción:</strong><br />
+                Sitio web tipo blog diseñado para compartir contenido poético y reflexivo, con enfoque en presentación limpia y experiencia del lector.
+              </p>
+              <p><strong>Contribuciones principales:</strong></p>
+              <ul>
+                <li>🛠️ Desarrollo completo individual.</li>
+                <li>📋 Gestión integral del proyecto.</li>
+                <li>⚡ Integración de componentes interactivos con JavaScript.</li>
+              </ul>
+              <p><strong>Resultados y aprendizajes:</strong><br />
+                Reforcé mi capacidad para trabajar de forma autónoma y mantener un enfoque estético y funcional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 d-flex">
+      <div class="card shadow-sm w-100 d-flex flex-column">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title text-center text-primary fw-bold mb-3">🛍️ Amanlli – Plataforma de Comercio</h5>
+            <ul class="list-unstyled mb-3">
+              <li><strong>Rol:</strong> Product Owner, Scrum Master & Full-Stack</li>
+              <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Java, Spring Boot</li>
+            </ul>
+            <div class="card-text-scroll">
+              <p><strong>Descripción:</strong><br />
+                Plataforma de comercio electrónico para conectar artesanos locales con consumidores, impulsando la economía mediante un espacio digital funcional.
+              </p>
+              <p><strong>Contribuciones principales:</strong></p>
+              <ul>
+                <li>📦 Liderazgo como Product Owner y Scrum Master.</li>
+                <li>💻 Desarrollo full-stack con Spring Boot.</li>
+                <li>🧠 Diseño de arquitectura del sistema.</li>
+                <li>🔁 Coordinación ágil del desarrollo.</li>
+              </ul>
+              <p><strong>Resultados y aprendizajes:</strong><br />
+                Consolidé experiencia en gestión de producto, liderazgo técnico y desarrollo full-stack en contexto real.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Sección Habilidades Técnicas -->
+<section id="HardSkills" class="bg-light py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+  <h2 class="fw-bold display-5 text-primary position-relative d-inline-block">
+    <span class="border-bottom border-3 border-primary pb-1">Habilidades Técnicas</span>
+  </h2>
+    <p class="mt-3 fs-5 text-muted">
+      Te presento algunas de las tecnologías y herramientas que domino como desarrollador full stack.
+    </p>
+  </div>
+
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+      <!-- Java -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-cup-hot-fill fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">Java</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- C# -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-hash fs-1 text-dark mb-3"></i>
+            <h5 class="card-title">C#</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- .NET -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-circle-fill fs-1 text-secondary mb-3"></i>
+            <h5 class="card-title">.NET</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- HTML -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-file-earmark-code-fill fs-1 text-danger mb-3"></i>
+            <h5 class="card-title">HTML</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-palette-fill fs-1 text-info mb-3"></i>
+            <h5 class="card-title">CSS</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-lightning-fill fs-1 text-warning mb-3"></i>
+            <h5 class="card-title">JavaScript</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Git -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-git fs-1 text-dark mb-3"></i>
+            <h5 class="card-title">Git</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oracle -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-database-fill fs-1 text-warning mb-3"></i>
+            <h5 class="card-title">Oracle</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Server -->
+      <div class="col">
+        <div class="card text-center h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="bi bi-server fs-1 text-secondary mb-3"></i>
+            <h5 class="card-title">SQL Server</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Sección CV -->
   <section id="cv" class="container py-5">
-    <h2 class="text-center mb-4">Currículum</h2>
+    <div class="container">
+    <div class="text-center mb-5">
+  <h2 class="fw-bold display-5 text-primary position-relative d-inline-block">
+    <span class="border-bottom border-3 border-primary pb-1">Resume</span>
+  </h2>
+    <p class="mt-3 fs-5 text-muted">
+      Aqui observaras un mi formación profesional y academica.
+    </p>
+  </div>
     <div class="text-center">
       <a href="/Documents/Cv-Desarrollador.pdf" class="btn btn-outline-primary" download>Descargar CV</a>
     </div>
@@ -177,9 +307,19 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Noel | Todos los derechos reservados</p>
-  </footer>
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-2">&copy; 2025 Noel | Todos los derechos reservados</p>
+    <div>
+      <a href="https://github.com/noelBanda" target="_blank" class="text-white me-3 fs-5">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+      <a href="www.linkedin.com/in/noelbanda" target="_blank" class="text-white fs-5">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>

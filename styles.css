@@ -7,9 +7,25 @@ header {
   background-image: linear-gradient(to right, #007bff, #00c6ff);
 }
 
-.card:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.card-text-scroll p,
+.card-text-scroll ul {
+  margin-bottom: 0.75rem;
+}
+
+.card-text-scroll ul {
+  padding-left: 1rem;
 }
 
 section h2 {
@@ -19,4 +35,45 @@ section h2 {
 
 footer {
   font-size: 0.9rem;
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0dcaf0 !important;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #0dcaf0;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #0dcaf0 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #0dcaf0;
 }
